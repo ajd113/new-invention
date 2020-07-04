@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+		/*.cont{
+			background:#000000;
+		}*/
+		/*导航栏背景颜色*/
+		.headerBackground{
+			/*页眉盒子*/
+				height: 100px;/*高度*/
+				margin:0 auto;/*居中*/
+				line-height: 0.5;/*行间距*/
+				background:#000000;
+			}
+		h1{
+				font-family: "华文行楷";/*字体*/
+				margin-left: 70px;
+				margin-bottom: 10px;
+		}
+		h1 a{
+				color:rgba(5,186,142,1.00);/*字体颜色*/
+				text-decoration: none;/*链接样式无*/
+			}
+		h1 a:hover{
+				color: #3B3B3B;/*鼠标划过样式*/
+			}
+		h4{
+				color: #FFFFFF;
+				font-size: 18px;
+				margin-left: 70px;
+			}
+		h2{
+	color: #E3E3E3;
+	font-size: 40px;
+	font-family: "楷体";
+}
+h3{
+	font-family: "黑体";
+	font-size: 25px;
+}
+		main{
+			text-align: center;
+			margin: 0 auto;
+			height: 455px;
+		}
+		.theWord{
+			padding-top: 110px;
+		}
+		.theWord p{
+			color: #ADADAD;
+			font-size: 25px;
+			font-family: "宋体";
+			letter-spacing: 5px;
+		}
+		.div1{
+			text-align: center;
+			width:900px;
+			height: 400px;
+			margin: 0 auto;
+			
+		}
+		.div3{
+			width:40%;
+			height:400px;
+			float: left;
+			padding-left: 5%;
+			padding-top: 20px;
+}
+		.div4{
+			width:40%;
+			height:400px;
+			float: right;
+			padding-left: 5%;
+			padding-top: 20px;
+}
+		
+		.div2{text-align:center;
+			width: 100%;
+			
+		}
+		p{
+			color: aliceblue;
+		}
+		.table{
+	float: right;
+	margin-top: -70px;/*上边距*/
+	margin-right: 10%;/*右边距*/
+			}
+		.search{
+			/*搜索框*/
+		
+				float: right;/*悬浮*/
+				margin-top: -70px;/*上边距*/
+				margin-left: 900px;/*左边距*/
+			}
+		.codrops-demos {
+	float: right;
+	clear: none;
+	padding-top: 10px;
+}
+
+.codrops-demos a {
+    display: inline-block;
+    margin: 10px 10px 10px 50px;
+    color:aliceblue;
+    font-weight: 700;
+    line-height: 30px;
+    border-bottom: 4px solid transparent;
+	text-decoration: none;
+}
+
+.codrops-demos a:hover {
+	color:rgba(5,186,142,1.00);
+	border-color:rgba(5,186,142,1.00);
+}
+
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	color: rgba(5,186,142,1.00);
+	border-color: rgba(5,186,142,1.00);
+}
+		
+
+    section {
+      height: 520px;
+      line-height: 40px;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .g-img {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center center;
+    }
+	.g-img1{background-attachment: scroll;
+			background-size: cover;
+			background-position: center center;
+	}
+
+    .g-img-1 {
+      background-image: url(../images/高铁2.jpg);
+		padding-top: 25px;
+    }
+
+    .g-img-2 {
+      background-image: url(../images/高铁4.jpg);
+		padding-top: 25px;
+    }
+		.g-img-2 h3{
+			color: #FFFFFF;
+		}
+		
+    .g-img-3 {
+      background-image: url(../images/高铁3.jpg);
+		padding-top: 25px;
+    }
+		.g-img-3 h3{
+			color: #FFFFFF;
+		}
+	.g-img-4{
+		background-image: url(../images/高铁1.jpg);
+		padding-top: 25px;
+		}
+	.g-img-4 h3{
+			color: #FFFFFF;
+		}
+	
+	footer{
+	height: 40px;
+	background-color:#000000;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 12px;
+	color:#FFFFFF;
+	word-spacing: 25px;
+}
+		

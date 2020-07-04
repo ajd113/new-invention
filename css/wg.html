@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh"><head>
+	<meta charset="utf-8">
+	<script src="../js/echarts.min.js"></script>
+	<link rel="stylesheet" href="../style/wg-style.css">
+	<title>聚焦新发明</title>
+
+</head>
+
+<body>
+	<header class="headerBackground">
+	<br>
+		<span style="cursor: pointer">
+			<h1><a href="https://baike.baidu.com/item/%E6%96%B0%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E/1549722?fr=aladdin" target="_blank">聚焦新发明</a>
+			</h1>
+				<h4 lang="en">
+				focus on new inventions
+				</h4>
+					<div class="table">
+					<nav class="codrops-demos">
+						<a  href="../index.html">主页</a>
+						<a href="../css/gxdc.html">共享单车</a>
+						<a href="../css/gt.html">高铁</a>
+						<a class="current-demo" href="#">网购</a>
+						<a href="../css/smzf.html">扫码支付</a>
+						<a href="../css/gywm.html">关于我们</a>
+					</nav>
+					</div>
+					
+	  </span>
+	</header>
+	
+	<main class="g-img g-img-1">
+			<div class="theWord">
+				<h2>
+					网购 (Online Shopping)
+				</h2>
+				<p>网上购物是一种足不出户就能在网上购买商品的新型购物方式</p>
+			</div>
+		</main>
+	 <section class="g-word">
+	<h3>（一）2017-2019年网购市场交易规模(亿元)</h3>
+	<div class="div1"  id="boxing1">
+	<script type="text/javascript">
+	 var myChart = echarts.init(document.getElementById('boxing1'));
+	 var option = {
+    color: ['#BA0707'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['2017', '2018', '2019'],
+            axisTick: {
+                alignWithLabel: true
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value'
+        }
+    ],
+    series: [
+        {
+            name: '交易规模',
+            type: 'bar',
+            barWidth: '60%',
+            data: [46370, 57370, 66610]
+        }
+    ]
+};
+ myChart.setOption(option);
+	</script>
+	</div>
+	
+	 </section>
+ 	 <section class="g-img g-img-2">
+		 <h3 style="color: #FFFFFF">（二）2019年中国网络商品销售比例(%)</h3>
+	 <div class="div2" id="boxing2">
+	<script type="text/javascript">
+		  var myChart = echarts.init(document.getElementById('boxing2'));
+		  var option = {
+    color: ['#6ab0b8'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01],
+		 axisLine: {
+							lineStyle: {
+								color: '#fff'
+							}
+						}
+    },
+    yAxis: {
+        type: 'category',
+        data: ['汽车用品', '其他', '钟表首饰', '运动户外', '营养保健', '母婴用品', '水果生鲜', '服饰箱包', '数码家电', '家居用品','食品饮料', '美容彩妆', '洗护用品'],
+		 axisLine: {
+							lineStyle: {
+								color: '#fff'
+							}
+						}
+    },
+    series: [
+        {
+            name: '销售比例',
+            type: 'bar',
+            data: [3.9,5.8,6.9,11.00,12.40,14.90,18.5,25.10,28.10,31.70,32.20,33.10,40.80]
+        }
+    ]
+};
+ myChart.setOption(option);
+	</script>
+	</div>	 
+	 </section>
+     
+	<section class="g-word">
+	<h3>（三）2019年中国网购用户网购行业主影响因素占比（%）</h3>
+	<div class="div3" id="boxing3">
+	<script type="text/javascript">
+	   	var myChart = echarts.init(document.getElementById('boxing3'));
+		var option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['直播带货、电商', '朋友圈、社交圈', '网红、明星推荐', '其他', '品牌促销','电商节、平台促销']
+    },
+    series: [
+        {
+            name: '影响因素占比',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '60%'],
+            data: [
+                {value: 3.60, name: '直播带货、电商'},
+                {value: 13.50, name: '朋友圈、社交圈'},
+                {value: 14.90, name: '网红、明星推荐'},
+                {value: 15.40, name: '其他'},
+                {value: 17.60, name: '品牌促销'},
+                {value: 35.00, name: '电商节、平台促销'}
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+
+myChart.setOption(option);
+	</script>
+	</div>
+	 </section>
+  	 <section class="g-img g-img-3">
+	<h3 style="color: aliceblue">（四）2013-2020年中国网购渗透率(%)走势预测</h3>
+		<div class="div1" id="boxing4"> 
+		<script type="text/javascript">
+			 var myChart = echarts.init(document.getElementById('boxing4'));
+	var option = {
+     color: ['#6ab0b8'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01],
+        axisLine: {
+							lineStyle: {
+								color: '#fff'
+							}
+						}
+    },
+    yAxis: {
+        type: 'category',
+        data: ['2013', '2014', '2015', '2016', '2017', '2018', '2019','2020E'],
+        axisLine: {
+							lineStyle: {
+								color: '#fff'
+							}
+						}
+    },
+    series: [
+        {
+            name: '渗透率',
+            type: 'bar',
+            data: [48.90,55.60,60.00,63.80,69.10,73.60,76.20,79.50]
+        }
+    ]
+};
+			 myChart.setOption(option);
+			</script>
+			</div>
+	 </section>
+ 	 <section class="g-word">
+		 <h3>（五）2020-2025年中国网购市场规模(亿元)及预测</h3>
+	<div class="div1" id="boxing5">
+		 <script type="text/javascript">
+		 var myChart = echarts.init(document.getElementById('boxing5'));
+		var option = {
+    color: ['#BA0707'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['2020E', '2021E', '2022E', '2023E', '2024E', '2025E'],
+            axisTick: {
+                alignWithLabel: true
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value'
+        }
+    ],
+    series: [
+        {
+            name: '市场规模',
+            type: 'bar',
+            barWidth: '60%',
+            data: [77850,91200,100500,110800,120600,130000]
+        }
+    ]
+};
+
+		myChart.setOption(option);	 
+		</script>
+		 </div>
+	</section>
+</body>
+<footer>
+	&copy;聚焦新发明； 数据来源：网络； 制作人员:赵芳，张陈芳，杨盈
+</footer>
+</html>

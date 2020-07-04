@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+			.maincontainer{
+			/*主背景*/
+				background-image: url(../images/dl.jpg);/*背景色*/
+				background-size: cover;/*背景大小*/
+				width: 100%;/*宽度*/
+				height: 100%;/*高度*/
+				position: fixed;/*位置*/
+			}
+			.box{
+			/*登录框*/
+				margin-left: 30%;
+				margin-top: 70px;
+				background-color: #AFAFAF;/*背景色*/
+				opacity: 0.7;/*透明度*/
+				width:30%;/*宽度*/
+				height: 400px;/*高度*/
+				padding: 10px 30px 0 30px;/*内边距*/
+				text-align: center;/*文本居中*/
+			}
+			.form{
+			/*表单*/
+				margin-top: 40px;/*上边距*/
+			}
+			.item{
+			/*项目*/
+				margin-top: 30px;/*上边距*/
+			}
+			.item input{
+				width: 200px;/*宽度*/
+				height: 25px;/*高度*/
+				font-family: "宋体";/*字体*/
+			}
+			.button input{
+				margin-top: 40px;/*上边距*/
+				width: 200px;/*宽度*/
+				height: 35px;/*高度*/
+				background-color: #015385;/*背景色*/
+				font-size: 15px;/*字体大小*/
+				color: #FFFFFF;/*字体颜色*/
+				border: 0;/*边框无*/
+			}
+			.row1{
+				float: left;/*左飘浮*/
+				font-size: 12px;/*字体大小*/
+			}
+			.row2{
+				float: right;/*右飘浮*/
+				font-size: 12px;/*字体大小*/
+			}
+			a{
+				color: #000000;/*链接字体颜色*/
+				font-weight: 500;
+			}
+			ul{
+				list-style: none;/*默认样式无*/
+			}
+			h2{
+				font-family:"楷体";/*字体*/
+				font-size: 28px;/*字号*/
+			}

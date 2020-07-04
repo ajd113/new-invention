@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+/*.cont{
+			background:#000000;
+		}*/
+		/*导航栏背景颜色*/
+		.headerBackground{
+			/*页眉盒子*/
+				width: 100%;/*宽度*/
+				height: 100px;/*高度*/
+				margin:0 auto;/*居中*/
+				line-height: 0.5;/*行间距*/
+				background:#000000;
+			}
+		h1{
+				font-family: "华文行楷";/*字体*/
+				margin-left: 70px;
+				margin-bottom: 10px;
+		}
+		h1 a{
+				color:rgba(5,186,142,1.00);/*字体颜色*/
+				text-decoration: none;/*链接样式无*/
+			}
+		h1 a:hover{
+				color: #3B3B3B;/*鼠标划过样式*/
+			}
+		h4{
+				color: #FFFFFF;
+				font-size: 18px;
+				margin-left: 70px;
+			}
+		h2{
+			color: #E3E3E3;
+			font-size: 40px;
+			font-family: "楷体";
+			}
+		.table{
+	float: right;
+	margin-top: -70px;/*上边距*/
+	margin-right: 10%;/*右边距*/
+			}
+		.codrops-demos {
+						float: right;
+						clear: none;
+						padding-top: 10px;
+						}
+
+.codrops-demos a {
+    display: inline-block;
+    margin: 10px 10px 10px 50px;
+    color:aliceblue;
+    font-weight: 700;
+    line-height: 30px;
+    border-bottom: 4px solid transparent;
+	text-decoration: none;
+}
+
+.codrops-demos a:hover {
+	color:rgba(5,186,142,1.00);
+	border-color:rgba(5,186,142,1.00);
+}
+
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	color:rgba(5,186,142,1.00);
+	border-color: rgba(5,186,142,1.00);
+}
+		
+
+    section {
+      height: 480px;
+      line-height: 40px;
+      text-align: center;
+      padding-top: 30px;
+    }
+		h3{
+			color:#000000;
+			font-size: 25px;
+			font-family: "楷体";
+		}
+		main{
+			text-align: center;
+			margin:0 auto;
+			height: 455px;
+		}
+
+    .g-img {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center center;
+		}
+	.g-img1{background-attachment: scroll;
+			background-size: cover;
+			background-position: center center;
+	}
+
+    .g-img-1 {
+       background-image: url(../images/背景图1.jpg);
+   }
+
+    .g-img-2 {
+      background-image: url(../images/背图2.jpg);
+    }
+
+    .g-img-3 {
+      background-image: url(../images/背图3.jpg);
+    }		
+	footer{
+					height: 40px;
+					background-color:#000000;
+					line-height: 40px;
+					text-align: center;
+					margin: 0 auto;
+					font-size: 12px;
+					color:#FFFFFF;
+					word-spacing: 25px;
+					}
+
+	.img1{float:left;}
+	
+	.img2{float:right;}
+	
+	.div1{text-align:left; width:500px;height: 400px;margin: 0 auto;right:350px;}	
+	
+	.div2{text-align:right;width: 500px;height: 400px;margin-top: -400px;float:right;left: -100px;}
+	
+	.theWord{padding-top: 110px;}
+		
+	.theWord p{
+				color: #ADADAD;
+		       font-size: 25px;
+				font-family: "宋体";
+				letter-spacing: 5px;
+				}

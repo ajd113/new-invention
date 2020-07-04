@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>扫码支付</title>
+		<script src="../js/echarts.min.js"></script>
+		<link rel="stylesheet" href="../style/smzf-style.css">
+	</head>
+
+	<body>
+		<!--页眉-->
+		<header class="headerBackground">
+			<br>
+			<span style="cursor: pointer"><!--鼠标样式-->
+				<h1>
+					<a href="https://baike.baidu.com/item/%E6%96%B0%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E/1549722?fr=aladdin" target="_blank">聚焦新发明</a>
+				</h1>
+			</span>
+				<h4 lang="en">
+					focus on new inventions
+				</h4>
+				<div class="table">
+					<nav class="codrops-demos">
+						<a class="current-demo1" href="../index.html">主页</a>
+						<a href="../css/gxdc.html" class="current-demo2">共享单车</a>
+						<a href="../css/gt.html" class="current-demo3">高铁</a>
+						<a href="../css/wg.html" class="current-demo4">网购</a>
+						<a href="../css/smzf.html" class="current-demo5">扫码支付</a>
+						<a href="../css/gywm.html" class="current-demo6">关于我们</a>
+					</nav>
+					<!--导航条-->
+				</div>
+					
+		</header>
+		
+		<main class="g-img g-img-1">
+			<div class="theWord">
+				<h2>
+					扫码支付 (scan to pay)
+				</h2>
+				<p>扫码支付是一种基于账户体系搭起来的新一代无线支付方案</p>
+			</div>
+		</main>
+		
+		<section class="g-word-1">
+			 <h3>（一）2019上半年中国受访商家偏好接入移动支付产品调查</h3>
+			 <img src="../images/移动支付调查.jpg" alt="移动支付调查">
+		</section>
+		
+		<section class="g-img g-img-2">
+			<div id="picture1" class="box">
+				<!--添加交互数据图JS-->
+				<script type="text/javascript">
+					var myChart = echarts.init(document.getElementById('picture1'));
+					option = {
+					title: {
+						left: 'center',
+						text: '(二）2014-2018年中国个体工商户规模（万户）',
+						textStyle: {
+                 			color:'#fff',
+							fontSize: 25,
+							fontFamily:'黑体'
+						}
+					},
+					tooltip: {
+        				trigger: 'axis'
+    				},
+					grid: {
+						left: '3%',
+						right: '4%',
+						bottom: '3%',
+						containLabel: true
+					},
+					toolbox: {
+						feature: {
+							saveAsImage: {}
+						}
+					},
+					xAxis: {
+						type: 'category',
+						data: ['2014', '2015', '2016', '2017', '2018'],
+						axisLine: {
+							lineStyle: {
+								color: '#fff'
+							}
+						}
+					},
+					yAxis: {
+						type: 'value',
+						 axisLine: {
+                			lineStyle: {
+                    			color: '#fff'
+							}
+            			}
+					},
+					series: [{
+						data: [4480.2, 4861.1, 5930.0, 6579.4, 7328.6],
+						type: 'line'
+					}]
+				};
+					myChart.setOption(option);
+				</script>
+			</div>
+		</section>
+		
+		<section class="g-word-2">
+			<h3>（三）2014-2019年中国移动支付交易规模（万亿元）</h3>
+			<img src="../images/交易规模.jpg" alt="交易规模">
+		</section>
+		
+		<section class="g-img g-img-3">
+			<h3>（四）支付宝用户</h3>
+			
+			<div id="picture3" class="box2">
+				<!--添加交互数据图JS-->
+				<script type="text/javascript">
+					var myChart = echarts.init(document.getElementById('picture3'));
+					option = {
+						title: {
+							text: '2019年6月支付宝用户年龄分布',
+							left: 'center',
+							textStyle: {
+                 				color:'#fff'
+							}
+						},
+						tooltip: {
+							trigger: 'item',
+							formatter: '{a} <br/>{b} : {c} ({d}%)'
+						},
+						legend: {
+							orient: 'vertical',
+							left: 'left',
+							data: ['24岁及以下', '25-30岁', '31-35岁', '36-40岁', '40及以上'],
+							textStyle: {
+							color: "rgb(238, 238, 238)"
+        					}
+						},
+						series: [
+							{
+								name: '年龄',
+								type: 'pie',
+								radius: '55%',
+								center: ['50%', '60%'],
+								data: [
+									{value: 38.80, name: '24岁及以下'},
+									{value: 28.40, name: '25-30岁'},
+									{value: 15.50, name: '31-35岁'},
+									{value: 8.20, name: '36-40岁'},
+									{value: 9.10, name: '40及以上'}
+								],
+								emphasis: {
+									itemStyle: {
+										shadowBlur: 10,
+										shadowOffsetX: 0,
+										shadowColor: 'rgba(0, 0, 0, 0.5)'
+									}
+								}
+							}
+						]
+					};
+					myChart.setOption(option);
+				</script>
+			</div>
+			
+			<div id="picture4" class="box3">
+				<!--添加交互数据图JS-->
+				<script type="text/javascript">
+					var myChart = echarts.init(document.getElementById('picture4'));
+					option = {
+						title: {
+							text: '2019年6月支付宝用户收入分布',
+							left: 'center',
+							textStyle: {
+                 				color:'#fff'
+							}
+						},
+						tooltip: {
+							trigger: 'item',
+							formatter: '{a} <br/>{b} : {c} ({d}%)'
+						},
+						legend: {
+							orient: 'vertical',
+							left: 'left',
+							data: ['3千元以下', '3-5千元', '5-10千元', '1-2万元', '2万元以上'],
+							textStyle: {
+							color: "rgb(238, 238, 238)"
+        					}
+						},
+						series: [
+							{
+								name: '收入',
+								type: 'pie',
+								radius: '55%',
+								center: ['50%', '60%'],
+								data: [
+									{value: 30.30, name: '3千元以下'},
+									{value: 28.50, name: '3-5千元'},
+									{value: 27.20, name: '5-10千元'},
+									{value: 9.50, name: '1-2万元'},
+									{value: 4.50, name: '2万元以上'}
+								],
+								emphasis: {
+									itemStyle: {
+										shadowBlur: 10,
+										shadowOffsetX: 0,
+										shadowColor: 'rgba(0, 0, 0, 0.5)'
+									}
+								}
+							}
+						]
+					};
+					myChart.setOption(option);
+				</script>
+			</div>
+		</section>
+		
+		<section class="g-word-3">
+			<h3>（五）微信用户</h3>
+			<div id="picture5" class="box2">
+				<!--添加交互数据图JS-->
+				<script type="text/javascript">
+					var myChart = echarts.init(document.getElementById('picture5'));
+					option = {
+						title: {
+							text: '2019年6月微信用户年龄分布',
+							left: 'center'
+						},
+						tooltip: {
+							trigger: 'item',
+							formatter: '{a} <br/>{b} : {c} ({d}%)'
+						},
+						legend: {
+							orient: 'vertical',
+							left: 'left',
+							data: ['24岁及以下', '25-30岁', '31-35岁', '36-40岁', '40及以上']
+						},
+						series: [
+							{
+								name: '年龄',
+								type: 'pie',
+								radius: '55%',
+								center: ['50%', '60%'],
+								data: [
+									{value: 33.50, name: '24岁及以下'},
+									{value: 25.00, name: '25-30岁'},
+									{value: 13.80, name: '31-35岁'},
+									{value: 8.60, name: '36-40岁'},
+									{value: 19.10, name: '40及以上'}
+								],
+								emphasis: {
+									itemStyle: {
+										shadowBlur: 10,
+										shadowOffsetX: 0,
+										shadowColor: 'rgba(0, 0, 0, 0.5)'
+									}
+								}
+							}
+						]
+					};
+					myChart.setOption(option);
+				</script>
+			</div>
+			
+			<div id="picture6" class="box3">
+				<!--添加交互数据图JS-->
+				<script type="text/javascript">
+					var myChart = echarts.init(document.getElementById('picture6'));
+					option = {
+						title: {
+							text: '2019年6月微信用户收入分布',
+							left: 'center'
+						},
+						tooltip: {
+							trigger: 'item',
+							formatter: '{a} <br/>{b} : {c} ({d}%)'
+						},
+						legend: {
+							orient: 'vertical',
+							left: 'left',
+							data: ['3千元以下', '3-5千元', '5-10千元', '1-2万元', '2万元以上']
+						},
+						series: [
+							{
+								name: '收入',
+								type: 'pie',
+								radius: '55%',
+								center: ['50%', '60%'],
+								data: [
+									{value: 30.20, name: '3千元以下'},
+									{value: 31.20, name: '3-5千元'},
+									{value: 25.10, name: '5-10千元'},
+									{value: 9.10, name: '1-2万元'},
+									{value: 4.40, name: '2万元以上'}
+								],
+								emphasis: {
+									itemStyle: {
+										shadowBlur: 10,
+										shadowOffsetX: 0,
+										shadowColor: 'rgba(0, 0, 0, 0.5)'
+									}
+								}
+							}
+						]
+					};
+					myChart.setOption(option);
+				</script>
+			</div>
+		</section>
+
+		<footer>
+			&copy;聚焦新发明； 数据来源：网络； 制作人员:赵芳，张陈芳，杨盈
+		</footer>
+	</body>
+</html>

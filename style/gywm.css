@@ -1,0 +1,250 @@
+@charset "utf-8";
+		/*.cont{
+			background:#000000;
+		}*/
+		/*导航栏背景颜色*/
+		
+		p{
+			margin-left: 140px;
+			color:#FFFFFF;
+			font-size: 50px;
+			font-family:Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+		}
+		.mainbody{
+				height: 700px;
+			background-image: url(../images/关于我们.jpg);
+			background-size: cover;		}
+		.headerBackground{
+			/*页眉盒子*/
+				
+				height: 100px;/*高度*/
+				margin:0 auto;/*居中*/
+				line-height: 0.5;/*行间距*/
+				background:#000000;
+			}
+		h1{
+				font-family: "华文行楷";/*字体*/
+				margin-left: 70px;
+				margin-bottom: 10px;
+		}
+		h1 a{
+				color:rgba(5,186,142,1.00);/*字体颜色*/
+				text-decoration: none;/*链接样式无*/
+			}
+		h1 a:hover{
+				color: #3B3B3B;/*鼠标划过样式*/
+			}
+	
+		h3{
+			margin-left: 140px;
+			color: #FFFFFF;
+		}
+		h4{
+				color: #FFFFFF;
+				font-size: 18px;
+				margin-left: 70px;
+			}
+		.table{
+	float: right;
+	margin-top: -70px;/*上边距*/
+	margin-right: 10%;/*右边距*/
+			}
+		.search{
+			/*搜索框*/
+		
+				float: right;/*悬浮*/
+				margin-top: -70px;/*上边距*/
+				margin-left: 900px;/*左边距*/
+			}
+		.codrops-demos {
+	float: right;
+	clear: none;
+	padding-top: 10px;
+}
+
+.codrops-demos a {
+    display: inline-block;
+    margin: 10px 10px 10px 50px;
+    color:aliceblue;
+    font-weight: 700;
+    line-height: 30px;
+    border-bottom: 4px solid transparent;
+	text-decoration: none;
+}
+
+.codrops-demos a:hover {
+	color:rgba(5,186,142,1.00);
+	border-color:rgba(5,186,142,1.00);
+}
+
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	color:rgba(5,186,142,1.00);
+	border-color:rgba(5,186,142,1.00);
+}
+		
+		footer{
+					width: 100%;
+					height: 40px;
+					background-color:#000000;
+					line-height: 40px;
+					text-align: center;
+					margin: 0 auto;
+					font-size: 12px;
+					color:#FFFFFF;
+					word-spacing: 25px;
+				
+					}
+		.container{
+			float: right;
+			margin-right: 0 auto;
+			width: 50%;
+		}
+		.container1{
+			margin-left: 0 auto;
+			width:50%;
+			height: 500px;
+			float: left;
+		}
+		.w3ls-left{
+    float: left;
+    width:65%;
+	height: 70%;
+    text-align: center;
+	position: relative;
+}
+		.login-w3l {
+    width: 100%;
+	padding: 4em;
+    background: rgb(0, 0, 0);
+    border-radius: 18px;
+    -webkit-box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 16px 0px rgba(255, 255, 255, 0.1);
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.login-form input[type="text"], .login-form textarea, .login-form input[type="email"] {
+    width: 93%;
+    padding: 10px;
+    border: none;
+    border-left: 1px solid #b52e31;
+    outline: none;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    background: rgba(45, 45, 45, 0.35);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    font-family: 'Montserrat', sans-serif;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.login-form input[type="text"]:hover, .login-form textarea:hover, .login-form input[type="email"]:hover {
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.login-form textarea{
+	resize:none;
+	height:50px;
+}
+.login-form input[type="submit"] {
+    background: #b52e31;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    text-transform: capitalize;
+    border: 2px solid #b52e31;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    padding: 13px 0;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+	background-color: transparent;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.3);
+    font-family: 'Montserrat', sans-serif;
+}
+.login-form input[type="submit"]:hover {
+    background:#f9b701c7;
+}
+		h3.sub-head-w3-agileits {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+		login-form input[type="text"], .login-form textarea, .login-form input[type="email"] {
+    width: 93%;
+    padding: 10px;
+    border: none;
+    border-left: 1px solid #b52e31;
+    outline: none;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    background: rgba(45, 45, 45, 0.35);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    font-family: 'Montserrat', sans-serif;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.login-form input[type="text"]:hover, .login-form textarea:hover, .login-form input[type="email"]:hover {
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.login-form textarea{
+	resize:none;
+	height:50px;
+}
+.login-form input[type="submit"] {
+    background: #b52e31;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    text-transform: capitalize;
+    border: 2px solid #b52e31;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    padding: 13px 0;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+	background-color: transparent;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.3);
+    font-family: 'Montserrat', sans-serif;
+}
+.login-form input[type="submit"]:hover {
+    background: rgba(131,149,217,1.00);
+}

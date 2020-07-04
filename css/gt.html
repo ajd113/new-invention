@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<script src="../js/echarts.min.js"></script>
+<title>聚焦新发明</title>
+	
+	<link href="../style/gt.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header class="headerBackground">
+	<br>
+		<span style="cursor: pointer">
+			<h1><a href="https://baike.baidu.com/item/%E6%96%B0%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E/1549722?fr=aladdin" target="_blank">聚焦新发明</a>
+			</h1>
+				<h4 lang="en">
+				focus on new inventions
+				</h4>
+					<div class="table">
+					<nav class="codrops-demos">
+						<a href="../index.html">主页</a>
+						<a href="../css/gxdc.html">共享单车</a>
+						<a class="current-demo" href="../#">高铁</a>
+						<a href="../css/wg.html">网购</a>
+						<a href="../css/smzf.html">扫码支付</a>
+						<a href="../css/gywm.html">关于我们</a>
+					</nav>
+					</div>
+					
+	  </span>
+	</header>
+	
+	 <main class="g-img g-img-1">
+			<div class="theWord">
+				<h2>
+					高铁 (high-speed railway)
+				</h2>
+				<p>高速铁路，简称高铁，是指设计标准等级高、可供列车安全高速行驶的铁路系统。</p>
+			</div>
+		</main>
+ 	 <section class="g-word-1">
+ 	 <h3>（一）中国高铁里程增长趋势</h3>
+ 	 <div id="main1" class="div1">
+		 <script type="text/javascript">
+			 var myChart =echarts.init(document.getElementById('main1'));
+			option = {
+				title: {
+						left: 'center',
+						text: '中国高铁份营运里程:万KM',
+						textStyle: {
+                 		color:'#000000',
+						fontSize: 25,
+							fontFamily:'黑体',
+						}
+					},
+				 tooltip: {
+        trigger: 'axis'
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {}
+        }
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['2009年', '2010年', '2011年', '2012年', '2013年', '2014年']
+    },
+      yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+            name: '营运里程',
+            type: 'line',
+            stack: '总量',
+            data: [1038,6000,7500,9369,11152,16000]
+        }
+        
+    ]
+};
+			 myChart.setOption(option)
+		 </script>
+    </div>
+    </section>
+     <section class="g-img g-img-2">
+     <h3>（二）消费者平均每年乘坐次数</h3>
+     <img src="../images/img1.png" width="700px" alt="乘坐次数"></section>
+  	 <section class="g-word-2">
+  	 <h3>（三）近年交通工具变化</h3>
+  	 <img src="../images/img6.png" width="550px" alt="工具变化"></section>
+ 	 <section class="g-img g-img-3">
+ 	 <h3>（四）近年来高铁总里程增长分析</h3>
+ 	 <img src="../images/img2.png" width="700px" alt="增长分析"></section>
+	 <section class="g-word-3">
+	 <h3>（五）高铁经济圈</h3>
+	 <img src="../images/img5.png" width="700px" alt="高铁经济圈">
+	 </section>
+	 <section class="g-img g-img-4">
+	 <h3>（六）高铁消费人群分析</h3>
+	 <div id="main3" class="div1">
+		 <script type="text/javascript">
+			 var myChart =echarts.init(document.getElementById('main3'));
+			 var option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01],
+		 axisLine: {
+							lineStyle: {
+								color: '#fff'
+							}
+						}
+    },
+    yAxis: {
+        type: 'category',
+        data: ['公务人员', '企业老板', '专业技术人员', '学生', '企业管理人员', '普通职员', '其他'],
+		 axisLine: {
+							lineStyle: {
+								color: '#fff'
+							}
+						}
+    },
+    series: [
+        {
+            name: '消费人群占比（%）',
+            type: 'bar',
+            data: [3.7,4.6,9.0,18.1,19.7,22.4,22.4]
+        }
+       
+    ]
+};
+ myChart.setOption(option)
+	  </script>
+	  </div>
+	  </section>
+	 <section class="g-word-4">
+	 <h3>（七）高铁消费人群分析</h3>
+		<div id="main4" class="div3">
+				<!--添加交互数据图JS-->
+				<script type="text/javascript">
+					var myChart = echarts.init(document.getElementById('main4'));
+					option = {
+						title: {
+							text: '高铁消费者学历占比',
+							left: 'center',
+							textStyle: {
+                 				color:'#000000'
+							}
+						},
+						tooltip: {
+							trigger: 'item',
+							formatter: '{a} <br/>{b} : {c} ({d}%)'
+						},
+						legend: {
+							orient: 'vertical',
+							left: 'left',
+							data: ['大专及以下', '大学本科',  '硕士及以上'],
+							textStyle: {
+							color: "#000000"
+        					}
+						},
+						series: [
+							{
+								name: '学历',
+								type: 'pie',
+								radius: '55%',
+								center: ['50%', '60%'],
+								data: [
+									{value: 56.00, name: '大专及以下'},
+									{value: 41.00, name: '大学本科'},
+									{value: 3.00, name: '硕士及以上'}
+								],
+								emphasis: {
+									itemStyle: {
+										shadowBlur: 10,
+										shadowOffsetX: 0,
+										shadowColor: 'rgba(0, 0, 0, 0.5)'
+									}
+								}
+							}
+						]
+					};
+					myChart.setOption(option);
+				</script>
+			</div>
+			<div id="main5" class="div4">
+				<script type="text/javascript">
+					var myChart = echarts.init(document.getElementById('main5'));
+					option = {
+						title: {
+							text: '高铁消费者年龄占比',
+							left: 'center',
+							textStyle: {
+                 				color:'#000000'
+							}
+						},
+						tooltip: {
+							trigger: 'item',
+							formatter: '{a} <br/>{b} : {c} ({d}%)'
+						},
+						legend: {
+							orient: 'vertical',
+							left: 'left',
+							data: ['25岁及以下', '25-35岁', '36-45岁' , '45岁以上'],
+							textStyle: {
+							color: "#000000"
+        					}
+						},
+						series: [
+							{
+								name: '年龄',
+								type: 'pie',
+								radius: '55%',
+								center: ['50%', '60%'],
+								data: [
+									{value: 28.00, name: '25岁及以下'},
+									{value: 34.00, name: '25-35岁'},
+									{value: 22.00, name: '36-45岁'},
+									{value: 16.00, name: '45岁以上'}
+								],
+								emphasis: {
+									itemStyle: {
+										shadowBlur: 10,
+										shadowOffsetX: 0,
+										shadowColor: 'rgba(0, 0, 0, 0.5)'
+									}
+								}
+							}
+						]
+					};
+					myChart.setOption(option);
+				</script>
+			</div>
+			</section>
+	<div class="div6">
+		<footer>
+			&copy;聚焦新发明； 数据来源：网络； 制作人员:赵芳，张陈芳，杨盈
+		</footer>
+	</div>
+</body>
+
+</html>

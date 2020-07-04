@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zh"><head>
+<meta charset="utf-8">
+	<script src="../js/echarts.min.js"></script>
+	<link rel="stylesheet" href="../style/gxdc-style.css">
+	<title>聚焦新发明</title>
+	
+</head>
+
+<body>
+	<header class="headerBackground">
+	<br>
+		<span style="cursor: pointer">
+			<h1><a href="https://baike.baidu.com/item/%E6%96%B0%E5%9B%9B%E5%A4%A7%E5%8F%91%E6%98%8E/1549722?fr=aladdin" target="_blank">聚焦新发明</a>
+			</h1>
+				<h4 lang="en">
+				focus on new inventions
+				</h4>
+					<div class="table">
+					<nav class="codrops-demos">
+						<a  href="../index.html">主页</a>
+						<a class="current-demo" href="#">共享单车</a>
+						<a href="../css/gt.html">高铁</a>
+						<a href="../css/wg.html">网购</a>
+						<a href="../css/smzf.html">扫码支付</a>
+						<a href="../css/gywm.html">关于我们</a>
+					</nav>
+					</div>
+					
+	  </span>
+	</header>
+	
+	<main class="g-img g-img-1">
+			<div class="theWord">
+				<h2>
+					共享单车 (bike-sharing)
+				</h2>
+				<p>共享单车采用分时租赁模式，是一种新型绿色环保共享经济</p>
+			</div>
+		</main>
+	 <section class="g-word">
+	<h3>（一）Mobike VS OFO 用户日活跃率和覆盖率</h3>
+	<div class="img1">
+	<img src="../images/活跃率.png" alt="活跃率" id="活跃率" width="600px">	 
+	</div>
+	<div class="img2">
+	<img src="../images/覆盖率.png" alt="覆盖率" id="覆盖率" width="600px">	 
+	</div>
+	 </section>
+ 	 <section class="g-img g-img-2">
+		 <h3 style="color: #FFFFFF">（二）Mobike VS OFO 用户性别比例</h3>
+	 <div class="div1" id="box1">
+	 <script type="text/javascript">
+		  var myChart = echarts.init(document.getElementById('box1'));
+		 var  option = {
+				
+    				tooltip: {
+        			trigger: 'item',
+						formatter: '{a} <br/>{b}: {c} ({d}%)'
+					},
+				 legend: {
+					 orient: 'vertical',
+					 data: ['男性', '女性'],
+					 textStyle: {
+							color: "rgb(238, 238, 238)"
+        				}
+				 	},
+				 	 series: [
+						{
+							name: 'Mobike用户性别比例',
+            				type: 'pie',
+							radius: ['50%', '70%'],
+            				avoidLabelOverlap: false,
+            				label: {
+								show: false,
+								position: 'center'
+								},
+							emphasis: {
+								label: {
+							   show: true,
+							  fontSize: '30',
+                       fontWeight: 'bold'
+                        }
+                                  },
+                    labelLine: {
+                   show: false
+                   },
+                  data: [
+                  {value:61.51, name: '男性'},
+                   {value: 38.49, name: '女性'},
+            ]
+        }
+    ]
+};
+			 myChart.setOption(option);	 
+	</script> 
+	</div>
+	<div id="box2" class="div2"> 
+	<script type="text/javascript">
+		 var myChart = echarts.init(document.getElementById('box2'));
+			 var  option = {
+    				tooltip: {
+        			trigger: 'item',
+						formatter: '{a} <br/>{b}: {c} ({d}%)'
+					},
+				 legend: {
+					 orient: 'vertical',
+					 data: ['男性', '女性'],
+					 textStyle: {
+							color: "rgb(238, 238, 238)"
+        				}
+				 	},
+				 	 series: [
+						{
+							name: 'OFO用户性别比例',
+            				type: 'pie',
+							radius: ['50%', '70%'],
+            				avoidLabelOverlap: false,
+            				label: {
+								show: false,
+								position: 'center'
+								},
+							emphasis: {
+								label: {
+							   show: true,
+							  fontSize: '30',
+                       fontWeight: 'bold'
+                        }
+                                  },
+                    labelLine: {
+                   show: false
+                   },
+                  data: [
+                  {value:55.17, name: '男性'},
+                   {value: 44.83, name: '女性'},
+            ]
+        }
+    ]
+};
+			 myChart.setOption(option);
+	</script> 
+    </div>	 
+	 </section>
+     <section class="g-word">
+	<h3>（三）Mobike VS OFO 用户年龄比例</h3>
+	<div class="div1" id="box5">
+	<script type="text/javascript">
+		 var myChart = echarts.init(document.getElementById('box5'));
+		var option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['19岁以下', '19-25岁', '26-35岁', '36-45岁', '45岁以上']
+    },
+    series: [
+        {
+            name: 'Mobike用户年龄比例',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '60%'],
+            data: [
+                {value: 1.97, name: '19岁以下'},
+                {value: 19.80, name: '19-25岁'},
+                {value: 53.06, name: '26-35岁'},
+                {value: 19.31, name: '36-45岁'},
+                {value: 5.86, name: '45岁以上'}
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+    myChart.setOption(option);
+	</script>	 
+	</div>
+	<div class="div2" id="box6">
+	<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('box6'));
+		var option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'right',
+        data: ['19岁以下', '19-25岁', '26-35岁', '36-45岁', '45岁以上']
+    },
+    series: [
+        {
+            name: 'OFO用户年龄比例',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '60%'],
+            data: [
+                {value: 3.61, name: '19岁以下'},
+                {value: 26.39, name: '19-25岁'},
+                {value: 45.67, name: '26-35岁'},
+                {value: 19.17, name: '36-45岁'},
+                {value: 5.16, name: '45岁以上'}
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+  myChart.setOption(option);
+	</script>	 
+	</div>
+	 </section>
+  	 <section class="g-img g-img-3">
+	<h3 style="color: aliceblue">（四）Mobike VS OFO 微博(左)和AppStore（右）正负面情绪</h3>
+		 <div class="div1" id="box3">
+	<script type="text/javascript">
+	 var myChart = echarts.init(document.getElementById('box3'));
+	 var  option = {
+    		tooltip: {},
+		 	dataset: {
+			source: [
+            ['product', 'Mobike', 'OFO'],
+            ['正面情绪',58.35,71.65],
+            ['负面情绪',41.65,28.35]
+        ]
+    },
+    xAxis: {type: 'category',
+		   axisLine: {
+							lineStyle: {
+								color: '#fff'
+							}
+						}
+		   },
+    yAxis: {
+		axisLine: {
+                			lineStyle: {
+                    			color: '#fff'
+							}
+            			}
+	},
+    // Declare several bar series, each will be mapped
+    // to a column of dataset.source by default.
+    series: [
+        {type: 'bar'},
+        {type: 'bar'},
+    ]
+};
+	myChart.setOption(option);
+	</script>
+	</div>
+	<div class="div2" id="box4">
+	<script type="text/javascript">
+		 var myChart = echarts.init(document.getElementById('box4'));
+		var option = {
+    tooltip: {},
+    dataset: {
+        source: [
+            ['product', 'Mobike', 'OFO'],
+            ['正面情绪',58.65,67.38],
+            ['负面情绪',41.35,32.62]
+           
+        ]
+    },
+    xAxis: {type: 'category',
+		    axisLine: {
+							lineStyle: {
+								color: '#fff'
+							}
+						}
+		   },
+    yAxis: {
+		 axisLine: {
+							lineStyle: {
+								color: '#fff'
+							}
+						}
+	},
+    // Declare several bar series, each will be mapped
+    // to a column of dataset.source by default.
+    series: [
+        {type: 'bar'},
+        {type: 'bar'},
+    ]
+};
+    myChart.setOption(option);	 
+	</script>	 
+	</div>
+	 </section>
+ 	 <section class="g-word">
+		 <h3>（五）Mobike VS OFO 区域用户热度</h3>
+	<div class="img1">
+	<img src="../images/MOBIKE用户热度.jpg" alt="MOBIKE用户热度" id="MOBIKE用户热度" width="600px">
+	</div>
+	<div class="img2">
+		<img src="../images/OFO用户热度.jpg" alt="OFO用户热度" id="OFO用户热度" width="600px">
+	</div>
+	</section>
+</body>
+<footer>
+	&copy;聚焦新发明； 数据来源：网络； 制作人员:赵芳，张陈芳，杨盈
+</footer>
+</html>
